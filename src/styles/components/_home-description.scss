@@ -1,0 +1,23 @@
+.home-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    width: 100%;
+    height: 400px;
+}
+
+.hello {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.see-work {
+    background-color: rgb(238, 71, 71);
+    padding: 15px 30px;
+    border-radius: 10%;
+    color: white;
+    margin-top: 50px;
+}
