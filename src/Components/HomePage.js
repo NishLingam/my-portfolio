@@ -6,8 +6,6 @@ import NavBar from './NavBar';
 const HomePage = () => (
     <div>
         <Hero />
-        <HomeDescription />
-        <NavBar />
     </div>
 )
 
