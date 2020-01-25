@@ -1,10 +1,13 @@
 import React from 'react';
-import Laptop from '../images/laptopImage.jpg'
-
 
 const Hero = () => (
-
-    <img src= {Laptop} />
+    
+    <div className = 'hero-image'>
+        <div className = 'hero-text'>
+            Hey
+        </div>
+    </div>
+    
 )
 
 export default Hero;

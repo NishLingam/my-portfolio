@@ -1,9 +1,12 @@
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/laptopImage.jpg");
+    background-color: black;
+    height: 1000px;
+    width: 1000px;
+}
 
-.background-img {
-
-    background-image: url(../images/laptopImage.jpg);
-    background-size: cover;
-    background-position: center center;
-
-    
+.hero-text {
+    height: 800px;
+    width: 800px;
+    background-color: black;
 }
