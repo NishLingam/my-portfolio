@@ -13,7 +13,6 @@ const NavBar = () => (
                 Portfolio
             </div>
         </div>
-      
     </div>
 )
 
