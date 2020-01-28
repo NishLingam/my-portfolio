@@ -6,7 +6,7 @@ import PhotoGallery from './PhotoGallery';
 import Footer from './Footer';
 
 const HomePage = () => (
-    <div>
+    <div  onScroll={(e)=>console.log(e)}>
         <Hero />
         <PhotoGallery />
         <Footer />

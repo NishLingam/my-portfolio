@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const NavBar = () => (
-    <div className = 'nav-bar'>
+const NavBar = () => { 
+
+    const [navBarClass, setNavBarClass] = useState('nav-bar')
+
+    console.log(window.scrollY);
+    
+    return (
+    <div className = {window.scrollY === 0 ? 'nav-bar' : 'nav-bar-scrolled'} >
         <div> 
             Nish Lingam
         </div>
@@ -15,5 +21,6 @@ const NavBar = () => (
         </div>
     </div>
 )
+}
 
 export default NavBar;

@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Hero = () => (
+
+const Hero = () => {
+
+    console.log(window.scrollY)
+
+return (
 <div className = 'hero-image-container'>
     <div className = 'hero-image'>
-        <div className = 'nav-bar'>
+        <div className = {window.scrollY === 0 ? 'nav-bar' : 'nav-bar-scrolled'} onScroll={(e)=>console.log(e)}>
             <div> 
                 Nish Lingam
             </div>
@@ -31,5 +36,6 @@ const Hero = () => (
 </div>
     
 )
+}
 
 export default Hero;

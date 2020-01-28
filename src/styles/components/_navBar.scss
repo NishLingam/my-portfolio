@@ -8,6 +8,21 @@
     height: 80px;
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.459) ;
+    position: fixed;
+}
+
+.nav-bar-scrolled {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fjalla One', sans-serif;
+
+
+    color: black;
+    background-color: red;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.459) ;
+    position: fixed;
 }
 
 .nav-bar-right {
