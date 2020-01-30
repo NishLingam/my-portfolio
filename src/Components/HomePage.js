@@ -1,16 +1,22 @@
 import React from 'react';
 import Hero from './Hero';
-import HomeDescription from './HomeDescription';
-import NavBar from './NavBar';
 import PhotoGallery from './PhotoGallery';
 import Footer from './Footer';
+import NavBar from './NavBar';
 
-const HomePage = () => (
-    <div  onScroll={(e)=>console.log(e)}>
-        <Hero />
-        <PhotoGallery />
-        <Footer />
-    </div>
-)
+
+
+const HomePage = () => {
+
+
+    return (
+        <div>
+            <NavBar />
+            <Hero />
+            <PhotoGallery />
+            <Footer />
+        </div>
+    )
+}
 
 export default HomePage;
