@@ -28,7 +28,7 @@ const PhotoGallery = () => {
 
     return (
         <div>
-            <h1> Photo Gallery </h1>
+            <div className = 'photo-gallery-header'> Photo Gallery </div>
             <div className = 'photo-gallery-carousel'>
                 <button onClick = {photoIndexDecreaser}> Left </button> 
                 <img src={photoArray[photoIndex%photoLength]} alt='Ennaanana' className = 'photo-gallery-main' />

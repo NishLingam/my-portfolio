@@ -23,16 +23,18 @@ class NavBar extends Component {
 
     render() 
     {    return (
-        <div className = {!this.state.scrolled ? 'nav-bar' : 'nav-bar-scrolled'} onScroll={(e)=>console.log(e)}>
-            <div> 
-                Nish Lingam
-            </div>
-            <div className = 'nav-bar-right'>
-                <div className = 'home-button'>
-                    Home
+        <div className = {!this.state.scrolled ? 'nav-bar-container' : 'nav-bar-container-scrolled'}>
+            <div className = {!this.state.scrolled ? 'nav-bar' : 'nav-bar-scrolled'}>
+                <div className = 'name'> 
+                    Nish Lingam
                 </div>
-                <div className = 'portfolio-button'>
-                    Portfolio
+                <div className = 'nav-bar-right'>
+                    <div className = 'home-button'>
+                        HOME
+                    </div>
+                    <div className = 'portfolio-button'>
+                        PORTFOLIO
+                    </div>
                 </div>
             </div>
         </div>

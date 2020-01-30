@@ -5,8 +5,8 @@ const HomeDescription = () => (
         <div className = 'hello'>
             Hello,
         </div>
-        <div>
-            My name is Nish, a Junior Developer and LSE Mathematics graduate.
+        <div className = 'bio-summary'>
+            My name is Nish, a Junior Developer and LSE Mathematics graduate. 
         </div>
         <button className = 'see-work'>
             SEE WORK
