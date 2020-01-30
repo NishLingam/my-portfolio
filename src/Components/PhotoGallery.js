@@ -44,7 +44,8 @@ const PhotoGallery = () => {
                 {photoArray.map((ele) => {
                     return (
                         <img 
-                        src={ele} 
+                        src = {ele} 
+                        alt = 'preview-image'
                         className = {photoArray.indexOf(ele) === photoIndex%photoLength ? 'preview-image-border' : 'preview-image'} 
                         onClick = {() => previewSwitchHandler(photoArray.indexOf(ele))}/>
                     )
