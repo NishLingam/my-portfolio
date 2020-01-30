@@ -57,7 +57,21 @@
 
 .home-button {
     margin-right: 30px;
+    cursor: pointer;
 }
+
+.home-button:hover {
+    color: rgb(210, 47, 37);
+}
+
+.portfolio-button{
+    cursor: pointer;
+}
+
+.portfolio-button:hover {
+    color: rgb(210, 47, 37);
+}
+
 
 .name {
     font-family: 'Josefin Sans', sans-serif;
