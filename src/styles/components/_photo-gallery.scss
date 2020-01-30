@@ -24,20 +24,52 @@
 .photo-gallery-main {
     height: 600px;
     width: 600px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 .photo-gallery-carousel {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
-.carousel-button {
-    padding: 8px 4px;
-    background-color: rgba(22, 22, 22, 0.192);
+.carousel-button-left {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    background-color: rgba(97, 97, 97, 0.699);
     outline: none;
     fill: white;
     color: white;
+}
+
+.carousel-button-left:hover {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.699);
+    outline: none;
+    fill: white;
+    color: white;
+}
+
+.carousel-button-right {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    background-color: rgba(97, 97, 97, 0.699);
+    outline: none;
+    fill: white;
+    color: white;
+    transform: rotate(180deg);
+}
+
+.carousel-button-right:hover {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.699);
+    outline: none;
+    fill: white;
+    color: white;
+    transform: rotate(180deg);
 }

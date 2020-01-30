@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MemoCubePic from '../images/MemoCube.png';
 import TapMathPic from '../images/TapMath.png';
-import LeftSVG from '../images/circle-left.svg'
+import LeftSVG, { ReactComponent as LeftSVGComponent } from '../images/left-arrow.svg'
 
 
 const photoArray = [MemoCubePic, TapMathPic];
@@ -32,9 +32,9 @@ const PhotoGallery = () => {
             <div className = 'photo-gallery-header'> Photo Gallery </div>
             <div className = 'lil-border'> </div>
             <div className = 'photo-gallery-carousel'>
-                <img className = 'carousel-button' onClick = {photoIndexDecreaser} src={LeftSVG}></img> 
+                <LeftSVGComponent onClick = {photoIndexDecreaser} className = 'carousel-button-left'/>
                 <img src={photoArray[photoIndex%photoLength]} alt = 'ProjectImage' className = 'photo-gallery-main' />
-                <button className = 'carousel-button' onClick={photoIndexIncreaser} > Right </button>
+                <LeftSVGComponent onClick = {photoIndexIncreaser} className = 'carousel-button-right'/>
             </div>
         </div>
 
