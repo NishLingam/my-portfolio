@@ -25,4 +25,19 @@
     height: 600px;
     width: 600px;
     margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.photo-gallery-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-button {
+    padding: 8px 4px;
+    background-color: rgba(22, 22, 22, 0.192);
+    outline: none;
+    fill: white;
+    color: white;
 }
