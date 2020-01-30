@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import MemoCubePic from '../images/MemoCube.png';
 import TapMathPic from '../images/TapMath.png';
-import Dicksons from '../images/Dicksons.png';
 
-const photoArray = [MemoCubePic, TapMathPic, Dicksons];
+
+const photoArray = [MemoCubePic, TapMathPic];
 const photoLength = photoArray.length;
 
 
@@ -27,11 +27,12 @@ const PhotoGallery = () => {
     };
 
     return (
-        <div>
+        <div className = 'photo-gallery-container'>
             <div className = 'photo-gallery-header'> Photo Gallery </div>
+            <div className = 'lil-border'> </div>
             <div className = 'photo-gallery-carousel'>
                 <button onClick = {photoIndexDecreaser}> Left </button> 
-                <img src={photoArray[photoIndex%photoLength]} alt='Ennaanana' className = 'photo-gallery-main' />
+                <img src={photoArray[photoIndex%photoLength]} alt = 'ProjectImage' className = 'photo-gallery-main' />
                 <button onClick={photoIndexIncreaser} > Right </button>
             </div>
         </div>
