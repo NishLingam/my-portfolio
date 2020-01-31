@@ -35,7 +35,7 @@ class NavBar extends Component {
                     <NavLink to='/' className = 'home-button'>
                         HOME
                     </NavLink>
-                    <NavLink to = '/portfolio' className = 'portfolio-button' activeClassName = 'portfolio-button-active'>
+                    <NavLink to = '/portfolio' className = 'portfolio-button' >
                         PORTFOLIO
                     </NavLink>
                 </div>

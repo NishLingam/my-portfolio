@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as HomeSVG } from '../images/home-run.svg';
 
 
 class TapMath extends Component {
@@ -77,7 +78,6 @@ class TapMath extends Component {
      }
 
     startTimer = () => {
-        console.log('Timer started')
         
         var timeArray = this.state.timer.split(/[:]+/);
         var m = timeArray[0];
@@ -120,8 +120,12 @@ render() {
     return (
         
         <div className = 'tapmath-container'>
+            
         <div className = 'app'>
-            <h1> TapMath </h1>
+            <div className = 'tapmath-header'>
+                <NavLink to='/portfolio' className='back-button'> <HomeSVG className = 'homeSVG' /> </NavLink>
+                <h1 className = 'tapmath-title'> TapMath  </h1>
+            </div>
         <div className="container">
             <div className="question">
                 <p className="question-box">
@@ -133,7 +137,7 @@ render() {
                      {!this.state.correctAnswer ? this.state.questionNumber0 + this.state.questionNumber1 : this.state.wrongAnswer}
                 </div>  
                 <div className= {this.state.gameOver ? "game-over-red" : "game-over-white"}>
-                    GAME OVER
+                    <p> GAME OVER :( </p>
                 </div>
                 <div className={this.state.answer1Style} onClick = {this.answer1SelectedHandler}>
                 {this.state.correctAnswer ? this.state.questionNumber0 + this.state.questionNumber1 : this.state.wrongAnswer}
@@ -145,7 +149,6 @@ render() {
                 </div>
                 <div className = "time-left"> Time left = {this.state.timer} <span className="timer"></span></div>
             </div>
-            <NavLink to='/portfolio' className='back-button'> Back </NavLink>
         </div>
     </div>
     </div>
