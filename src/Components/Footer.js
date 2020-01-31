@@ -12,6 +12,7 @@ const Footer = () => {
     return (
         <div className = 'footer'> 
             <p className='contact-header'> Contact Me </p>
+            <div className = 'lil-border'> </div>
             <div className = 'footer-detail'> 
                 <EmailSVG className = 'footer-icon' onClick = {mailToHandler}/>
                 <a href = 'https://github.com/NishLingam' target = 'blank'> <GitHubSVG className = 'footer-icon' /> </a>

@@ -7,7 +7,7 @@ import NavBar from '../Components/NavBar';
 
 
 const HomePage = () => {
-
+    window.scrollTo(0, 0);
 
     return (
         <div>
