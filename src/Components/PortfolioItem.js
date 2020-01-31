@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 const PortfolioItem = (props) => (
@@ -6,7 +7,7 @@ const PortfolioItem = (props) => (
         <h1 className = 'portfolio-header'> {props.appName} </h1>
         <div className = 'lil-border'> </div>
         <div className = 'portfolio-item'>
-            <img src= {props.appImage} className='portfolio-preview' />
+            <NavLink to = '/tapmath'> <img src= {props.appImage} className='portfolio-preview' /> </NavLink>
             <p> {props.description} </p>
         </div>
     </div>
