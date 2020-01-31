@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from './Hero';
-import PhotoGallery from './PhotoGallery';
-import Footer from './Footer';
-import NavBar from './NavBar';
+import Hero from '../Components/Hero';
+import PhotoGallery from '../Components/PhotoGallery';
+import Footer from '../Components/Footer';
+import NavBar from '../Components/NavBar';
 
 
 
