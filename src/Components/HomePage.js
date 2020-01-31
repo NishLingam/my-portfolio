@@ -11,7 +11,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <NavBar />
+            <NavBar background = 'name' />
             <Hero />
             <PhotoGallery />
             <Footer />

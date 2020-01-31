@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class NavBar extends Component {
     constructor() {
@@ -19,6 +20,8 @@ class NavBar extends Component {
                 ) }
             })
     }
+
+    
     
 
     render() 
@@ -26,15 +29,15 @@ class NavBar extends Component {
         <div className = {!this.state.scrolled ? 'nav-bar-container' : 'nav-bar-container-scrolled'}>
             <div className = {!this.state.scrolled ? 'nav-bar' : 'nav-bar-scrolled'}>
                 <div className = 'name'> 
-                    Nish Lingam
+                    Nish Lingam 
                 </div>
                 <div className = 'nav-bar-right'>
-                    <div className = 'home-button'>
+                    <NavLink to='/' className = 'home-button'>
                         HOME
-                    </div>
-                    <div className = 'portfolio-button'>
+                    </NavLink>
+                    <NavLink to = '/portfolio' className = 'portfolio-button' activeClassName = 'portfolio-button-active'>
                         PORTFOLIO
-                    </div>
+                    </NavLink>
                 </div>
             </div>
         </div>
