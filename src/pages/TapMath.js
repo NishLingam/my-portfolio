@@ -82,7 +82,7 @@ class TapMath extends Component {
         var timeArray = this.state.timer.split(/[:]+/);
         var m = timeArray[0];
         var s = this.checkSecond((timeArray[1] - 1));
-        if(s==59){m=m-1}
+        if(s===59){m=m-1}
 
         this.setState({
             timer: `${m} : ${s}`
@@ -119,8 +119,7 @@ class TapMath extends Component {
 render() {
     return (
         
-        <div className = 'tapmath-container'>
-            
+        <div className = 'tapmath-container'>  
         <div className = 'app'>
             <div className = 'tapmath-header'>
                 <NavLink to='/portfolio' className='back-button'> <HomeSVG className = 'homeSVG' /> </NavLink>
