@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
 
@@ -12,9 +13,11 @@ return (
             <div className = 'bio-summary'>
                 My name is Nish, a Junior Developer and LSE Mathematics graduate.
             </div>
-            <button className = 'see-work'>
-                SEE WORK
-            </button>
+            <NavLink to='/portfolio'> 
+                <button className = 'see-work'>
+                    SEE WORK
+                </button>
+            </NavLink>
         </div>
     </div>
 </div>
