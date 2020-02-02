@@ -28,9 +28,11 @@ class NavBar extends Component {
     {    return (
         <div className = {!this.state.scrolled ? 'nav-bar-container' : 'nav-bar-container-scrolled'}>
             <div className = {!this.state.scrolled ? 'nav-bar' : 'nav-bar-scrolled'}>
-                <div className = 'name'> 
-                    Nish Lingam 
-                </div>
+                <NavLink to='/' className = 'home-button'>
+                    <div className = 'name'> 
+                        Nish Lingam 
+                    </div>
+                </NavLink>
                 <div className = 'nav-bar-right'>
                     <NavLink to='/' className = 'home-button'>
                         HOME
