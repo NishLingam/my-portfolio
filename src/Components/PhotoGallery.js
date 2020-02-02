@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import MemoCubePic from '../images/MemoCube.png';
 import TapMathPic from '../images/TapMath.png';
-import { ReactComponent as LeftSVGComponent } from '../images/left-arrow.svg'
+import { ReactComponent as LeftSVGComponent } from '../images/left-arrow.svg';
+import { NavLink } from 'react-router-dom';
 
 
 const photoArray = [MemoCubePic, TapMathPic];
@@ -37,18 +38,20 @@ const PhotoGallery = () => {
             <div className = 'lil-border'> </div>
             <div className = 'photo-gallery-carousel'>
                 <LeftSVGComponent onClick = {photoIndexDecreaser} className = 'carousel-button-left noSelect'/>
-                <img src={photoArray[photoIndex%photoLength]} alt = 'ProjectImage' className = 'photo-gallery-main noSelect' />
+                <NavLink to ='/portfolio'>
+                    <img src={photoArray[photoIndex%photoLength]} alt = 'ProjectImage' className = 'photo-gallery-main noSelect' />
+                </NavLink>
                 <LeftSVGComponent onClick = {photoIndexIncreaser} className = 'carousel-button-right noSelect'/>
             </div>
             <div className = 'preview-container'> 
                 {photoArray.map((ele) => {
                     return (
-                        <img 
-                        src = {ele} 
-                        alt = 'preview'
-                        key = {photoArray.indexOf(ele)}
-                        className = {photoArray.indexOf(ele) === photoIndex%photoLength ? 'preview-image-border' : 'preview-image'} 
-                        onClick = {() => previewSwitchHandler(photoArray.indexOf(ele))}/>
+                            <img 
+                            src = {ele} 
+                            alt = 'preview'
+                            key = {photoArray.indexOf(ele)}
+                            className = {photoArray.indexOf(ele) === photoIndex%photoLength ? 'preview-image-border' : 'preview-image'} 
+                            onClick = {() => previewSwitchHandler(photoArray.indexOf(ele))}/>
                     )
                 })}
             </div>
