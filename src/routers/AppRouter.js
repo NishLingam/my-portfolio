@@ -11,6 +11,7 @@ const AppRouter = () => (
         <div>
             <Switch>
                 <Route path='/' exact = {true}> <HomePage /> </Route>
+                <Route path='/index.html' exact = {true}> <HomePage /> </Route>
                 <Route path='/portfolio'> <Portfolio /> </Route>
                 <Route path='/tapmath'> <TapMath /> </Route>
                 <Route path='/memocube'> <MemoCube /> </Route>
