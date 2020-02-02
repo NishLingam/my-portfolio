@@ -9,7 +9,7 @@ import { ReactComponent as HomeSVG } from '../../images/home-run.svg';
 
 
 const MemoryApp = (props) => {
-
+    
     return (
 
         <div className = 'memocube-container'>
@@ -35,7 +35,6 @@ const mapStatetoProps = (state) => {
     return {
         showButton: state.showStartButton,
         score: state.score,
-        correctSquares: state.correctSquares,
         correctCounter: state.correctCounter,
         gameOver: state.gameOver,
         levelCounter: state.levelCounter,

@@ -12,7 +12,7 @@ const store = configureStore();
 
 
 const state = store.getState();
-console.log(state)
+
 
 
 const MemoCube = () => {

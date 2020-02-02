@@ -65,4 +65,12 @@ const levelUp = () => {
     }
 }
 
-export { hideSquares, patternGenerator, correctSelected, incorrectSelected, gameOver, resetAll, nextRound, startButtonHandler, levelUp };
+const levelUpMax = () => {
+
+    return {
+        type: 'LEVEL_UP_MAX'
+    }
+}
+
+
+export { hideSquares, patternGenerator, correctSelected, incorrectSelected, gameOver, resetAll, nextRound, startButtonHandler, levelUp, levelUpMax };

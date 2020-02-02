@@ -1,7 +1,7 @@
 import React from 'react';
 import MiniSquare from './MiniSquare';
 import { connect } from 'react-redux';
-import { levelUp, nextRound, hideSquares, patternGenerator } from '../../actions/actions';
+import { levelUp, nextRound, hideSquares, patternGenerator, levelUpMax } from '../../actions/actions';
 import uuid  from 'uuid';
 
 
@@ -9,14 +9,22 @@ const TotalSquare = (props) => {
 
     let count = -1;
 
-    if (props.levelCounter === props.dimension) {
+    if (props.levelCounter === props.dimension && props.dimension < 6) {
         setTimeout(() => {
             props.dispatch(levelUp())
     }, 500)
     setTimeout(() => {
             roundStarter(props.dimension + 1)
     }, 500)
-    } else if (props.correctCounter === props.dimension) {
+    } else if (props.levelCounter === props.dimension && props.dimension === 6) {
+        setTimeout(() => {
+            props.dispatch(levelUpMax())
+    }, 500)
+    setTimeout(() => {
+            roundStarter(props.dimension)
+    }, 500)
+    }
+    else if (props.correctCounter === props.dimension) {
         setTimeout(() => {
                 props.dispatch(nextRound())
         }, 500)

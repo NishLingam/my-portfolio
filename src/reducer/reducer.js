@@ -58,6 +58,15 @@ const reducer = (state = defaultState, action) => {
                 score: state.score + 1,
                 showStartButton:false,
             }
+        case 'LEVEL_UP_MAX':
+            return {
+                ...defaultState,
+                dimension: state.dimension,
+                dimensionArray: [...state.dimensionArray, state.dimension],
+                levelCounter: 0,
+                score: state.score + 1,
+                showStartButton:false,
+                }
         case 'NEXT_ROUND':
             return {
                 ...defaultState,
