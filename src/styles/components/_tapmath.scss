@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Helvetica, arial, sans-serif;
     font-weight: 300;
     position: relative;
     color: #555;
@@ -91,6 +91,7 @@ h1 {
     margin: 0px 40px 30px 40px;
     background-color: lightblue;
     color: black;
+    cursor: pointer;
 
     @media (max-width: $desktop-breakpoint) {
         font-size: 22px;
@@ -154,7 +155,7 @@ h1 {
 
 .game-over-white {
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Helvetica, arial, sans-serif;
     font-size: 24px;
     font-weight: 800;
     text-align: center;
@@ -163,7 +164,7 @@ h1 {
 
 .game-over-red {
     color: rgb(250, 165, 165);
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Helvetica, arial, sans-serif;
     font-size: 24px;
     font-weight: 800;
     text-align: center;

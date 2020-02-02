@@ -11,7 +11,7 @@ return (
                 Hello,
             </div>
             <div className = 'bio-summary'>
-                My name is Nish, a Web Developer and LSE Mathematics graduate.
+                My name is Nish, a Web Developer and LSE Mathematics Graduate.
             </div>
             <NavLink to='/portfolio'> 
                 <button className = 'see-work'>
