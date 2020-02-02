@@ -4,6 +4,8 @@ import StartButton from './StartButton';
 import ScoreCounter from './ScoreCounter';
 import GameOver from './GameOver';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { ReactComponent as HomeSVG } from '../../images/home-run.svg';
 
 
 const MemoryApp = (props) => {
@@ -13,7 +15,10 @@ const MemoryApp = (props) => {
         <div className = 'memocube-container'>
             {!props.gameOver && 
             <div className = 'game-container'> 
-            <h1 className = 'memocube-title'> MemoCube </h1>
+                <div className = 'tapmath-header'> 
+                    <NavLink to='/portfolio' className='back-button'> <HomeSVG className = 'homeSVG' /> </NavLink>
+                    <h1 className = 'memocube-title'> MemoCube </h1>
+                </div>
             <TotalSquare />
             <StartButton />
             <ScoreCounter score = {props.score}/>

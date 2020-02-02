@@ -39,6 +39,11 @@ h1 {
     display: flex;
     flex-direction: column;
 
+    @media (max-width: $desktop-breakpoint) {
+        width: 350px;
+        height: 400px;
+    }
+
 }
 
 .question {
@@ -61,6 +66,11 @@ h1 {
     background-color: lightblue;
     border-radius: 100px;
     color: black;
+
+    @media (max-width: $desktop-breakpoint) {
+        padding: 20px;
+        font-size: 28px;
+    }
 }
 
 .answers {
@@ -69,7 +79,7 @@ h1 {
 
     display: flex;
     justify-content: space-around;
-    align-items: flex-end  ;
+    align-items: flex-end;
 }
 
 
@@ -81,6 +91,11 @@ h1 {
     margin: 0px 40px 30px 40px;
     background-color: lightblue;
     color: black;
+
+    @media (max-width: $desktop-breakpoint) {
+        font-size: 28px;
+        padding: 20px;
+    }
 }
 
 .correct-answer {
@@ -91,6 +106,11 @@ h1 {
     margin: 0px 40px 30px 40px;
     background-color: lightgreen;
     color: black;
+
+    @media (max-width: $desktop-breakpoint) {
+        font-size: 22px;
+        padding: 10px;
+    }
 }
 
 .wrong-answer {
@@ -118,6 +138,12 @@ h1 {
     color: black;
     padding: 30px;
     margin-left: 30px;
+
+
+    @media (max-width: $desktop-breakpoint) {
+        font-size: 18px;
+        padding: 10px;
+    }
 }
 
 .game-over-white {
@@ -143,6 +169,11 @@ h1 {
     font-size: 20px;
     color: black;
     padding: 30px;
+
+    @media (max-width: $desktop-breakpoint) {
+        font-size: 18px;
+        padding: 10px;
+    }
 }
 
 .homeSVG{
@@ -154,6 +185,11 @@ h1 {
     background-color: rgba(202, 202, 202, 0.664);
 
     border-radius: 10px;
+
+    @media (max-width: $desktop-breakpoint) {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 .homeSVG:hover {

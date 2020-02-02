@@ -7,7 +7,7 @@ const PortfolioItem = (props) => (
         <h1 className = 'portfolio-header'> {props.appName} </h1>
         <div className = 'lil-border'> </div>
         <div className = 'portfolio-item'>
-            <NavLink to = '/memocube'> <img src= {props.appImage} className='portfolio-preview' alt='app-preview'/> </NavLink>
+            <NavLink to = {props.appPath}> <img src= {props.appImage} className='portfolio-preview' alt='app-preview'/> </NavLink>
             <p> {props.description} </p>
         </div>
     </div>

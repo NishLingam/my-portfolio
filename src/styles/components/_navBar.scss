@@ -3,6 +3,10 @@
     height: 58px;
 
     position: fixed;
+
+    @media (max-width: $desktop-breakpoint) {
+        width: 100vw;
+    }
 }
 
 .nav-bar-container-scrolled {
@@ -11,6 +15,10 @@
     background-color: rgba(0, 0, 0, 0.699);
 
     position: fixed;
+
+    @media (max-width: $desktop-breakpoint) {
+        width: 100vw;
+    }
 }
 
 .nav-bar {
@@ -27,6 +35,11 @@
     
     border-bottom: 1px solid rgba(255, 255, 255, 0.459);
     position: fixed;
+
+    @media (max-width: $desktop-breakpoint) {
+        margin:0px 20px;
+        width: calc(100vw - 40px);
+    }
 }
 
 .nav-bar-scrolled {
@@ -40,9 +53,13 @@
     color: white;
     height: 58px;
     width: calc(100% - 100px);
-   
 
     position: fixed;
+
+    @media (max-width: $desktop-breakpoint) {
+        margin:0px 20px;
+        width: calc(100vw - 40px);
+    }
 }
 
 .nav-bar-right {
@@ -78,16 +95,20 @@
     font-size: 14px;
     letter-spacing: 2px;
     color: white;
+
+    @media (max-width: $desktop-breakpoint) {
+        margin-right: 10px;
+    }
+   
+    
 }
 
 .portfolio-button:hover {
     color: rgb(210, 47, 37);
-}
 
-.portfolio-button-active {
-    font-family: Helvetica, arial, sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
+    @media (max-width: $desktop-breakpoint) {
+        margin-right: 10px;
+    }
 }
 
 
@@ -95,6 +116,10 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 28px;
     font-weight: bold;
+
+    @media (max-width: $desktop-breakpoint) {
+        font-size: 18px;
+    }
 }
 
 .active-navlink {

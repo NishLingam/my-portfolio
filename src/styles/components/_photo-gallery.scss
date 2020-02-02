@@ -26,6 +26,12 @@
     height: 600px;
     width: 600px;
     margin: 25px 50px 25px;
+
+    @media (max-width: $desktop-breakpoint) {
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+    }
 }
 
 .photo-gallery-carousel {
@@ -42,6 +48,13 @@
     fill: white;
     color: white;
     cursor: pointer;
+
+    @media (max-width: $desktop-breakpoint) {
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        margin-left: 10px;
+    }
 }
 
 .carousel-button-left:hover {
@@ -52,6 +65,13 @@
     outline: none;
     fill: white;
     color: white;
+
+    @media (max-width: $desktop-breakpoint) {
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        margin-left: 10px;
+    }
 }
 
 .carousel-button-right {
@@ -64,6 +84,13 @@
     color: white;
     transform: rotate(180deg);
     cursor: pointer;
+
+    @media (max-width: $desktop-breakpoint) {
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        margin-right: 10px;
+    }
 }
 
 .carousel-button-right:hover {
@@ -75,6 +102,13 @@
     fill: white;
     color: white;
     transform: rotate(180deg);
+
+    @media (max-width: $desktop-breakpoint) {
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        margin-right: 10px;
+    }
 }
 
 .noSelect {
@@ -92,6 +126,10 @@
 
     display:flex;
     justify-content: flex-start;
+
+    @media (max-width: $desktop-breakpoint) {
+        width: 250px;
+    }
 }
 
 .preview-image {

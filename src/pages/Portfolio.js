@@ -19,8 +19,8 @@ const Portfolio = () => {
                 My Recent Work
             </div>
 
-            <PortfolioItem appName = 'MemoCube' appImage = {MemoCube} description = {MemoCubeDes} />
-            <PortfolioItem appName = 'TapMath' appImage = {TapMath} description = {TapMathDes} />
+            <PortfolioItem appName = 'MemoCube' appImage = {MemoCube} description = {MemoCubeDes} appPath = '/memocube'/>
+            <PortfolioItem appName = 'TapMath' appImage = {TapMath} description = {TapMathDes} appPath = '/tapmath'/>
             <Footer />
         </div>
     )   
