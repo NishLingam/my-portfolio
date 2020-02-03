@@ -8,9 +8,9 @@ const defaultState =
         score: 0,
         correctCounter: 0,
         gameOver: false,
-        dimension: 2,
-        dimensionArray: [0, 1],
-        levelCounter: 0
+        dimension: 6,
+        dimensionArray: [0, 1, 2, 3, 4, 5],
+        levelCounter: 5
     } 
 
 
@@ -61,8 +61,8 @@ const reducer = (state = defaultState, action) => {
         case 'LEVEL_UP_MAX':
             return {
                 ...defaultState,
-                dimension: state.dimension,
-                dimensionArray: [...state.dimensionArray, state.dimension],
+                dimension: state.dimension + 1,
+                dimensionArray: [...state.dimensionArray],
                 levelCounter: 0,
                 score: state.score + 1,
                 showStartButton:false,

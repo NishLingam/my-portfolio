@@ -18,7 +18,7 @@ const TotalSquare = (props) => {
     }, 500)
     } else if (props.levelCounter === props.dimension && props.dimension === 6) {
         setTimeout(() => {
-            props.dispatch(levelUpMax())
+            props.dispatch(nextRound())
     }, 500)
     setTimeout(() => {
             roundStarter(props.dimension)
