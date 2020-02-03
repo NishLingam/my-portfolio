@@ -8,9 +8,9 @@ const defaultState =
         score: 0,
         correctCounter: 0,
         gameOver: false,
-        dimension: 6,
-        dimensionArray: [0, 1, 2, 3, 4, 5],
-        levelCounter: 5
+        dimension: 2,
+        dimensionArray: [0, 1],
+        levelCounter: 0
     } 
 
 
