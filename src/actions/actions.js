@@ -1,76 +1,48 @@
-const patternGenerator = (pattern)  => {
+const patternGenerator = (pattern) => ({
+  type: 'PATTERN_GENERATOR',
+  pattern,
+});
 
-    return {
-        type: 'PATTERN_GENERATOR',
-        pattern
-    }
-}
+const correctSelected = (id) => ({
+  type: 'CORRECT_SELECTED',
+  id,
+});
 
-const correctSelected = (id) => {
+const incorrectSelected = (id) => ({
+  type: 'INCORRECT_SELECTED',
+  id,
+});
 
-    return {
-        type: 'CORRECT_SELECTED',
-        id
-    }
-}
+const gameOver = () => ({
+  type: 'GAME_OVER',
+});
 
-const incorrectSelected = (id) => {
+const resetAll = () => ({
+  type: 'RESET_ALL',
+});
 
-    return {
-        type: 'INCORRECT_SELECTED',
-        id
-    }
-}
+const hideSquares = (emptyPattern) => ({
+  type: 'HIDE_SQUARES',
+  emptyPattern,
+});
 
-const gameOver = () => {
+const nextRound = () => ({
+  type: 'NEXT_ROUND',
+});
 
-    return {
-        type: 'GAME_OVER'
-    }
-}
+const startButtonHandler = () => ({
+  type: 'START_BUTTON_HANDLER',
+});
 
-const resetAll = () => {
+const levelUp = () => ({
+  type: 'LEVEL_UP',
+});
 
-    return {
-        type: 'RESET_ALL'
-    }
-}
-
-const hideSquares = (emptyPattern) => {
-
-    return {
-        type: 'HIDE_SQUARES',
-        emptyPattern
-    }
-}
-
-const nextRound = () => {
-
-    return {
-        type: 'NEXT_ROUND'
-    }
-}
-
-const startButtonHandler = () => {
-
-    return {
-        type: 'START_BUTTON_HANDLER'
-    }
-}
-
-const levelUp = () => {
-
-    return {
-        type: 'LEVEL_UP'
-    }
-}
-
-const levelUpMax = () => {
-
-    return {
-        type: 'LEVEL_UP_MAX'
-    }
-}
+const levelUpMax = () => ({
+  type: 'LEVEL_UP_MAX',
+});
 
 
-export { hideSquares, patternGenerator, correctSelected, incorrectSelected, gameOver, resetAll, nextRound, startButtonHandler, levelUp, levelUpMax };
+export {
+  hideSquares, patternGenerator, correctSelected, incorrectSelected, gameOver, resetAll, nextRound, startButtonHandler, levelUp, levelUpMax,
+};

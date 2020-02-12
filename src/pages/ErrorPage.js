@@ -1,9 +1,9 @@
 import React from 'react';
 
 const ErrorPage = () => (
-    <div>
+  <div>
         404! PageNotFound
-    </div>
-)
+  </div>
+);
 
 export default ErrorPage;

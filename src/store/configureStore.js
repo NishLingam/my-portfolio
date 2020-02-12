@@ -3,9 +3,7 @@ import reducer from '../reducer/reducer';
 
 
 export default () => {
+  const store = createStore(reducer);
 
-    const store = createStore(reducer);
-
-    return store;
-}
-
+  return store;
+};

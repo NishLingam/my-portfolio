@@ -7,18 +7,42 @@ import TapMath from '../pages/TapMath';
 import MemoCube from '../pages/MemoCube';
 
 const AppRouter = () => (
-    <BrowserRouter>
-        <div>
-            <Switch>
-                <Route path='/' exact = {true}> <HomePage /> </Route>
-                <Route path='/index.html' exact = {true}> <HomePage /> </Route>
-                <Route path='/portfolio'> <Portfolio /> </Route>
-                <Route path='/tapmath'> <TapMath /> </Route>
-                <Route path='/memocube'> <MemoCube /> </Route>
-                <Route> <ErrorPage /> </Route> 
-            </Switch>
-        </div>
-    </BrowserRouter>
-)
+  <BrowserRouter>
+    <div>
+      <Switch>
+        <Route path="/" exact>
+          {' '}
+          <HomePage />
+          {' '}
+        </Route>
+        <Route path="/index.html" exact>
+          {' '}
+          <HomePage />
+          {' '}
+        </Route>
+        <Route path="/portfolio">
+          {' '}
+          <Portfolio />
+          {' '}
+        </Route>
+        <Route path="/tapmath">
+          {' '}
+          <TapMath />
+          {' '}
+        </Route>
+        <Route path="/memocube">
+          {' '}
+          <MemoCube />
+          {' '}
+        </Route>
+        <Route>
+          {' '}
+          <ErrorPage />
+          {' '}
+        </Route>
+      </Switch>
+    </div>
+  </BrowserRouter>
+);
 
 export default AppRouter;
