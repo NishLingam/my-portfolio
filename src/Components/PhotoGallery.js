@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import MemoCubePic from '../images/MemoCube.png';
 import TapMathPic from '../images/TapMath.png';
+import MathLrnPic from '../images/MathLrn.png';
 import { ReactComponent as LeftSVGComponent } from '../images/left-arrow.svg';
 
 
-const photoArray = [MemoCubePic, TapMathPic];
+const photoArray = [MathLrnPic, MemoCubePic, TapMathPic];
 const photoLength = photoArray.length;
 
 const PhotoGallery = () => {
