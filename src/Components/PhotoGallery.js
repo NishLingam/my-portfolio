@@ -3,10 +3,11 @@ import { NavLink } from 'react-router-dom';
 import MemoCubePic from '../images/MemoCube.png';
 import TapMathPic from '../images/TapMath.png';
 import MathLrnPic from '../images/MathLrn.png';
+import NBSEngagePic from '../images/NBSEngage.png';
 import { ReactComponent as LeftSVGComponent } from '../images/left-arrow.svg';
 
 
-const photoArray = [MathLrnPic, MemoCubePic, TapMathPic];
+const photoArray = [MathLrnPic, NBSEngagePic, MemoCubePic, TapMathPic];
 const photoLength = photoArray.length;
 
 const PhotoGallery = () => {
