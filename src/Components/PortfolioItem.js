@@ -1,22 +1,27 @@
 import React from 'react';
 
-const PortfolioItem = (props) => (
-  <div className={props.appName}>
+const PortfolioItem = ({ appName, appImage, description, appPath, technologies, index }) => (
+  <div className={index % 2 == 0 ? "portfolio-item-grey" : "portfolio-item-white"}>
     <h1 className="portfolio-header">
       {' '}
-      {props.appName}
+      {appName}
       {' '}
     </h1>
     <div className="lil-border"> </div>
     <div className="portfolio-item">
-      <a target="blank" href={props.appPath}>
+      <a target="blank" href={appPath}>
         {' '}
-        <img src={props.appImage} className="portfolio-preview" alt="app-preview" />
+        <img src={appImage} className="portfolio-image" alt="app-preview" />
         {' '}
       </a>
-      <p>
+      <p className='portfolio-description'>
         {' '}
-        {props.description}
+        {description}
+        {' '}
+      </p>
+      <p className='portfolio-description'>
+        {' '}
+        {technologies}
         {' '}
       </p>
     </div>

@@ -18,7 +18,7 @@
     color:rgb(210, 47, 37);
 }
 
-.portfolio-preview {
+.portfolio-image {
     height: 300px;
     width: 300px;
     margin-right: 100px;
@@ -33,8 +33,9 @@
 
 .portfolio-item {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 75vw;
 
     margin-top: 25px;
     padding-bottom: 75px;
@@ -49,20 +50,18 @@
     
 }
 
-.MemoCube {
+.portfolio-item-grey {
     background-color:rgb(246, 246, 246);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
 }
 
-.TapMath {
+.portfolio-item-white {
     background-color:white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
 }
