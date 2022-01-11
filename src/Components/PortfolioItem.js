@@ -12,9 +12,6 @@ const PortfolioItem = ({ appName, appImage, description, appPath, technologies, 
       </a>
       <div className='portfolio-description'>
         {description}
-        <p className='portfolio-technologies'>
-        {technologies}
-        </p>
       </div>
     </div>
   </div>
