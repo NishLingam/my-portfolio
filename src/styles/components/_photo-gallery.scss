@@ -121,15 +121,11 @@
 }
 
 .preview-container {
-    width: 600px;
+    width: 100%;
     margin-bottom: 50px;
 
     display:flex;
-    justify-content: flex-start;
-
-    @media (max-width: $desktop-breakpoint) {
-        width: 250px;
-    }
+    justify-content: center;
 }
 
 .preview-image {
@@ -149,8 +145,4 @@
     border: 2px solid rgb(210, 47, 37);
 
     box-sizing: border-box;
-}
-
-.portfolio-description {
-    min-width: 500px;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
-const PortfolioItem = ({ appName, appImage, description, appPath, technologies, index }) => (
-  <div className={index % 2 == 0 ? "portfolio-item-grey" : "portfolio-item-white"}>
+const PortfolioItem = ({ appName, appImage, description, appPath, index }) => (
+  <div className={index % 2 === 0 ? "portfolio-item-grey" : "portfolio-item-white"}>
     <h1 className="portfolio-header">
       {appName}
     </h1>
@@ -12,9 +12,6 @@ const PortfolioItem = ({ appName, appImage, description, appPath, technologies, 
       </a>
       <div className='portfolio-description'>
         {description}
-        <p className='portfolio-technologies'>
-        {technologies}
-        </p>
       </div>
     </div>
   </div>
