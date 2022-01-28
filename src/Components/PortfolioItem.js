@@ -10,12 +10,9 @@ const PortfolioItem = ({ appName, appImage, description, appPath, technologies, 
       <a target="blank" href={appPath}>
         <img src={appImage} className="portfolio-image" alt="app-preview" />
       </a>
-      <div className='portfolio-description'>
-        {description}
-        <p className='portfolio-technologies'>
-        {technologies}
+        <p className='portfolio-description'>
+          {description}
         </p>
-      </div>
     </div>
   </div>
 );
